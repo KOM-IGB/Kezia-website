@@ -554,7 +554,7 @@ color: #ffffff;
 
 @media (max-width: 768px) {
 
-    /* NAVBAR */
+      /* Navbar */
     .menu-toggle {
         display: block;
     }
@@ -576,30 +576,83 @@ color: #ffffff;
         display: flex; /* Show when toggled */
     }
 
-    /* HERO IMAGE */
+    /* Hero */
     .hero-container {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        gap: 20px;
         padding: 20px;
     }
 
     .hero-image img {
-        width: 80%;
+        width: 80%;    /* Adjust for cleaner mobile look */
         max-width: 300px;
         border-radius: 20px;
     }
 
-    /* HEADINGS */
-    h1, h2, h3 {
-        font-size: 28px !important;
-        text-align: center;
+    .container {
+        width: 100%;
+        padding: 0 10px;
     }
 
-    /* PARAGRAPHS */
-    p {
-        font-size: 16px !important;
-        line-height: 1.6;
-        padding: 0 10px;
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .buttons button {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* About section */
+    .about-container {
+        flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+
+    .about-column.right img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Skills grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- SMALL PHONES ---- */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .hero img {
+        width: 95%;
     }
 
     /* CONTACT SECTION STACKING */
@@ -664,6 +717,7 @@ color: #ffffff;
         margin: 10px 0;
     }
 }
+
 
 
 
