@@ -555,41 +555,36 @@ color: #ffffff;
 @media (max-width: 768px) {
 
     /* NAVBAR */
+    .menu-toggle {
+        display: block;
+    }
+
     .navbar ul {
-        flex-direction: column;
-        gap: 20px;
-        background: #1a1a1a;
         position: absolute;
-        right: 0;
-        top: 60px;
-        width: 200px;
-        padding: 20px;
-        display: none;
-        text-align: right;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: #111;
+        padding: 20px 0;
+        gap: 20px;
+        display: none; /* Hidden by default */
     }
 
     .navbar ul.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        font-size: 32px;
-        color: #fff;
+        display: flex; /* Show when toggled */
     }
 
     /* HERO IMAGE */
-    .hero-content {
+    .hero-container {
         text-align: center;
         padding: 20px;
     }
 
     .hero-image img {
         width: 80%;
-        max-width: 280px;
+        max-width: 300px;
         border-radius: 20px;
     }
 
@@ -669,5 +664,6 @@ color: #ffffff;
         margin: 10px 0;
     }
 }
+
 
 
