@@ -552,7 +552,7 @@ color: #ffffff;
       RESPONSIVE RULES
 ============================ */
 
-@media (max-width: 768px) {
+@mobile (max-width: 768px) {
 
     /* NAVBAR */
     .menu-toggle {
@@ -664,6 +664,7 @@ color: #ffffff;
         margin: 10px 0;
     }
 }
+
 
 
 
