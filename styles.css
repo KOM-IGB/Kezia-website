@@ -552,108 +552,121 @@ color: #ffffff;
       RESPONSIVE RULES
 ============================ */
 
-/* ---- TABLETS & PHONES ---- */
 @media (max-width: 768px) {
 
-    /* Navbar */
-    .menu-toggle {
-        display: block;
-    }
-
+    /* NAVBAR */
     .navbar ul {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
         flex-direction: column;
-        text-align: center;
-        background: #111;
-        padding: 20px 0;
         gap: 20px;
-        display: none; /* Hidden by default */
+        background: #1a1a1a;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 200px;
+        padding: 20px;
+        display: none;
+        text-align: right;
     }
 
     .navbar ul.active {
-        display: flex; /* Show when toggled */
+        display: flex;
     }
 
-    /* Hero */
-    .hero-container {
-        display: flex;
-        flex-direction: column;
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    /* HERO IMAGE */
+    .hero-content {
         text-align: center;
-        align-items: center;
-        gap: 20px;
         padding: 20px;
     }
 
     .hero-image img {
-        width: 80%;    /* Adjust for cleaner mobile look */
-        max-width: 300px;
+        width: 80%;
+        max-width: 280px;
         border-radius: 20px;
     }
 
-    .container {
+    /* HEADINGS */
+    h1, h2, h3 {
+        font-size: 28px !important;
+        text-align: center;
+    }
+
+    /* PARAGRAPHS */
+    p {
+        font-size: 16px !important;
+        line-height: 1.6;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    /* CONTACT SECTION STACKING */
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-left,
+    .contact-right {
         width: 100%;
         padding: 0 10px;
     }
 
-    .header h1 {
-        font-size: 28px;
-    }
-
-    .header h2 {
-        font-size: 20px;
-    }
-
-    .content p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .buttons {
+    /* CONTACT ICONS */
+    .contact-item {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
         align-items: center;
+        gap: 15px;
     }
 
-    .buttons button {
-        width: 80%;
-        max-width: 250px;
+    /* FORM BUTTON */
+    .form-btn {
+        width: 100%;
+        font-size: 18px;
+        padding: 14px;
     }
 
-    /* About section */
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .about-column.right img {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    /* Skills grid */
+    /* SKILLS CARDS */
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 10px;
     }
 
-    /* Projects */
-    .projects-container {
+    .skill-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-/* ---- SMALL PHONES ---- */
-@media (max-width: 480px) {
-    .navbar a {
-        font-size: 16px;
+        gap: 30px;
+        padding: 0 15px;
     }
 
-    .hero img {
-        width: 95%;
+    .project-card img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .project-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    /* BUTTONS */
+    .contact-button,
+    .view-work-button {
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
